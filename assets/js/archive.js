@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentLang = localStorage.getItem('lang') || 'en';
 
         try {
-            const response = await fetch('https://scandiumui.vercel.app/assets/json/source.json');
+            const response = await fetch('https://scandiumui.vercel.app/assets/json/info.json');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
